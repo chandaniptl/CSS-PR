@@ -1,0 +1,974 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans JP';
+}
+p {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    align-items: center;
+    margin: 10px;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.relative {
+    position: relative;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.width-1 {
+    width: 8.33%;
+}
+
+.width-2 {
+    width: 16.66%;
+}
+
+.width-3 {
+    width: 24.99%;
+}
+
+.width-4 {
+    width: 33.32%;
+}
+
+.width-5 {
+    width: 41.65%;
+}
+
+.width-6 {
+    width: 50%;
+}
+
+.width-7 {
+    width: 58.31%;
+}
+
+.width-8 {
+    width: 66.64%;
+}
+
+.width-9 {
+    width: 74.97%;
+}
+
+.width-10 {
+    width: 83.3%;
+}
+
+.width-11 {
+    width: 91.63%;
+}
+
+.width-12 {
+    width: 100%;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: black;
+    padding: 20px 0;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 100px;
+    margin-left: 150px;
+}
+
+header li:not(:first-child) {
+    margin-left: 20px 0;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+header a {
+    font-family: 'Noto Sans JP';
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header li:last-child a {
+    border: 3px solid rgb(8, 96, 130);
+    padding: 10px 10px;
+}
+
+header .fa-space-awesome {
+    margin-right: 5px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+header li a:hover {
+    background-image: linear-gradient(rgb(7, 71, 96), rgb(69, 69, 160));
+}
+
+
+
+/* BANNER */
+.banner {
+    background: url(https://mobirise.com/extensions/solutionm4/marketingsolution/assets/images/background2.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color-burn;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 120px 0 150px 0;
+}
+
+.banner-content a:hover {
+    background-image: linear-gradient(rgb(7, 71, 96), rgb(69, 69, 160));
+}
+
+
+h1 {
+    font-size: 80px;
+    background-image: linear-gradient(rgb(73, 132, 156), rgb(64, 64, 113));
+    letter-spacing: 1px;
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+.banner-content p {
+    font-size: 20px;
+    color: grey;
+    margin-bottom: 30px;   
+    
+}
+
+.banner-content a {
+    color: whitesmoke;
+    background-color: rgb(52, 92, 151);
+    padding: 10px 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+}
+
+.banner-content a>i {
+    margin-right: 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+
+/* Services */
+
+
+.services{
+    background-color: #111111;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.services .container{
+    margin-left: 190px;
+}
+
+
+.services-items{
+    margin: 10px;
+    z-index: 9 ;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.services-items:hover {
+    transform: scale(1.05);
+}
+
+.services-items:hover::after {
+    transform: scale(1.05);
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.services-items a{
+    font-family: 'Noto Sans JP';
+    background-color: #191919;
+    padding: 40px 30px;
+    display: block;
+    height: 260px;
+    width: 260px;
+}
+.services-items h2{
+    font-family: 'Noto Sans JP';
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.services-items p{
+   color: #999999;
+   font-weight: 400;
+   font-family: 'Noto Sans JP';
+   font-size: 14px;
+   padding-top: 20px;
+}
+
+.services-items i{
+    background-image: linear-gradient(-90deg, #55b4d4,#5758e0);
+    color: transparent;
+    background-clip: text;
+    font-size: 25px;
+    padding-top:15px;
+    padding-bottom:20px;
+}
+
+.services-items i:last-child{
+    color: #333;
+    font-size: 20px;
+}
+
+.services-items .ri-arrow-right-circle-line{
+    color: #999999;    
+}
+
+.services-items a:hover{
+    background-image: linear-gradient(-90deg, #478192,#1f1f4c);
+}
+
+
+.services .col-4:first-child a::before{
+    content: '';
+    width: 80%;
+    height: 70%;
+    background-image: linear-gradient(-90deg, #55b4d4,#5758e0);
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: -1;
+}
+.services .col-4:last-child a::before{
+    content: '';
+    width: 80%;
+    height: 70%;
+    background-image: linear-gradient(-90deg, #55b4d4,#5758e0);
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    z-index: -1;
+}
+
+.services-items:hover {
+    background-image: linear-gradient(rgb(7, 71, 96), rgb(69, 69, 160));
+}
+
+
+
+ /* ABOUT US  */
+
+ .cont{
+    width: 100%;
+    margin: 0 auto;
+    padding:10px 20px;
+    background-color: rgb(27, 27, 27);
+ }
+
+ .about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 100px;
+ }
+
+ .about-image{
+    flex: 1;
+    margin-left: 60px;
+    overflow: hidden;
+ }
+
+ .about-image img{
+    max-width: 400px;
+    display: block;
+    margin: 40px 100px ; 
+    padding-right: 1px;
+ }
+ 
+ .about-content{
+    flex: 1;
+ }
+
+ .about-content h2{
+    font-size: 29px;
+    margin-bottom: 20px;
+    color: rgb(224, 235, 235);
+ }
+
+ .about-content p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: gray;
+    font-weight: 500;
+ }
+
+ .about-content span{
+    background-image: linear-gradient(rgb(7, 71, 96), rgb(69, 69, 160));
+   display: inline-block;
+   width: 50px;
+   height: 4px;
+ }
+
+
+ /* PROFESSIONALS */
+
+.professional{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(19, 19, 19);
+}
+
+
+.professional-info span{
+    background-image: linear-gradient(rgb(7, 71, 96), rgb(69, 69, 160));
+   display: inline-block;
+   width: 45px;
+   height: 4px;
+   margin-top: 60px;
+   margin-right: 120px;
+   margin-bottom: -10px;
+ }
+
+ .professional-info{
+   flex: 1;
+ }
+
+ .professional img{
+    float: right;
+    height: 400px;
+    width: 400px;
+    margin: 50px 190px;
+    flex: 1;
+    overflow: hidden; 
+ }
+
+ .professional-info h1{
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 25px; 
+    font-size: 29px;
+    color: rgb(224, 235, 235);
+    margin-left:170px ;
+    text-align: left;
+    margin-top: 20px;
+    
+ }
+
+ .professional-info p{
+  
+    font-size: 16px;
+    line-height: 1.5;
+    color: gray;
+    margin-left:170px ;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 15px;
+ }
+ 
+ .professional-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+ }
+
+ .professional-content.box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    font-weight: 600;
+   
+ }
+
+  .p-i-text h3{
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    font-size: 16px;
+    color: aliceblue;
+    flex-direction: column;
+    font-weight: 400;
+    margin-left:170px ;
+    text-align: left;
+ } 
+
+ .p-i-text p{
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    font-size: 15px;
+    color:gray;
+    font-weight: 400;
+    flex-direction: column;
+    margin-left:170px ;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: -20px;
+
+ } 
+
+ .professional-content .box .text h3{
+    font-weight: 500px;
+    color: antiquewhite;
+ }  
+
+ .p-i-text i{
+    display: flex;
+    color: rgb(7, 71, 96) ;
+    margin-left: 130px;
+    font-size: 24px;
+ }
+
+
+
+ /* FEATURES */
+
+ .Features{
+    background-color: black;
+    padding: 40px 0 70px 0 ;
+ }
+
+ .Features-title h2{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
+ }
+
+ .Features-title p{
+    color: gray;
+    font-size: 18px;
+    font-weight: 500;
+ }
+
+ .Features-inner a{
+    background-color: rgb(54, 52, 52);
+    padding: 15px;
+    color: gray;
+    margin-top: 15px;
+    margin-right: 150px;
+    margin-left: 150px;
+    font-weight: 600;
+
+ }
+
+ .Features-inner i{
+    color: blue;
+    font-size: 18px;
+ }
+
+
+ /* PORTFOLIO */
+
+ .portfolio{
+    margin: 0;
+    padding: 40px 0 70px 0 ;
+ }
+
+ .portfolio-heading h2{
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ .portfolio-heading p{
+    font-family: "Josefin Sans", sans-serif;
+    color: gray;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+ }
+
+ .p-info{
+    margin-left: 160px;
+    text-align: center;
+    margin-top: 20px;
+ }
+  .card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .portfolio-card{
+    width: 280px;
+    overflow: hidden;
+    height: 360px;
+    background-size: cover;
+    margin: 14px;
+  }
+
+  .portfolio{
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    height:600px;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .portfolio-card{
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background-color: rgb(184, 154, 115);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+ .portfolio-card:hover{
+    transform: translateY(20px);
+}
+
+.portfolio-card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(123, 191, 202, 0.5), rgb(67, 112, 226));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.portfolio-card:hover:before{
+    opacity: 1;
+}
+
+.portfolio-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.portfolio-card h3{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(48, 46, 46);
+    line-height: 20px;
+    font-weight: 900;
+}
+
+.portfolio-card p{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(35, 34, 34);
+    line-height: 10px;
+    font-weight: 400;
+}
+
+.portfolio-card .info{
+    position: relative;
+    z-index: 3;
+    color: black;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.portfolio-card:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+ .portfolio-card h3{
+    margin: 0;
+}
+
+.portfolio-card p{
+    line-height: 20px;
+}
+
+
+ /* VIDEO */
+
+
+.video{
+    background-color:rgb(27, 27, 27);
+}
+ .video .container{
+    position: relative;
+    display: inline-block;
+ }
+
+ .video-text h1{
+    color: white;
+    font-size: 34px;
+    margin-bottom: 15px;
+    margin-top: 80px;
+    margin-left: 300px;
+ }
+
+ .video-text p{
+    color: gray;
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: 315px;
+ }
+ .video-image img{
+    display: block;
+    width: 590px;
+    height: 300px;
+    margin-left: 320px;
+    margin-bottom: 50px;
+    position: relative;
+ } 
+
+ .video-image i{
+    position: absolute;
+    top: 210px;
+    left: 500px;
+    color:rgb(81, 112, 189);
+    transform: translate(200%,200%);
+    font-size: 70px;
+ }
+ 
+ /* .video i:hover {
+    transform: scaleY(1);
+    background: linear-gradient(to bottom, rgba(91, 132, 138, 0.5), rgb(39, 77, 172));
+} */
+
+
+
+ /* TESTIMONIALS  */
+
+
+.card-container{
+    background-color: black;
+    margin: 0;
+}
+
+.card-headind h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 34px;
+    margin-top: 70px;
+   margin-bottom: 25px;
+   color: whitesmoke;
+
+}
+
+.card-headind p{
+    font-family: 'Noto Sans JP';
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 25px;
+   color: rgb(64, 65, 66);
+   margin-bottom: 20px;
+}
+
+ .card-img-top{
+    width: 50%;
+    border-radius: 50%;
+    margin-top:20px ;
+ }
+
+
+ .card-body p{
+    color: rgb(142, 141, 141);
+    line-height: 20px;
+    font-size: 14px;
+    font-family: 'Noto Sans JP';
+    padding-top: 10px;
+ }
+
+ .card-body i{
+    color: rgb(73, 144, 195);
+    line-height: 80px;
+    font-size: 16px;
+    padding-top: 8px;
+ }
+
+ .card-body h5{
+    color: white;
+    font-family: 'Noto Sans JP';
+    font-size: 20px;
+    padding-top: 10px;
+
+ }
+  
+  .card {
+    position: relative;
+    margin: 20px;
+    width: 200px;
+    background-color:rgb(53, 47, 47);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 300px;
+  }
+
+
+.card:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to bottom, rgba(91, 132, 138, 0.5), rgb(39, 77, 172));
+}
+
+
+
+  /* TALK */
+
+  .talk{
+    background-color: black;
+    padding-top: 40px;
+  }
+
+  .talk-wrapper{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .talk-content{
+    width: 50%;
+    margin: 0px 25px;
+  }
+
+  .talk-content h2{
+    font-size: 30px;
+    color: rgb(231, 228, 228);
+    margin-left:60px ;
+
+  }
+
+  .talk-content p{
+    color: gray;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:60px ;
+
+  }
+
+  .talk-img img{
+    width: 400px;
+    height: 350px;
+    margin-right: 160px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .talk-content button{
+    position: relative;
+    margin-top: 17px;
+    text-decoration: none;
+    border: 2px solid blue;
+    font-size: 13px;
+    color: aliceblue;
+    padding: 13px 16px;
+    display: inline-block;
+    line-height: 3px;
+    cursor: pointer;
+    background-color: blue;  
+    margin-left:60px ;
+    font-weight: 600;
+  }
+
+  .talk-content button::before{
+    position: absolute;
+    content: "";
+    border: 1px solid transparent;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(71, 71, 226);
+    z-index: -1;
+    transition: 0.7s;
+    transform: scaleX(0);
+  }
+  
+  .talk-content button:hover{
+    color: rgb(9, 9, 9);
+  }
+
+  .talk-content input{
+    line-height: 3.5;
+    width: 350px;
+    margin-left:60px ;
+    border: 1px solid gray;
+    background-color: black;
+    color: gray;
+    font-size: 12px;
+    padding-left:10px ;
+    font-weight: 800;
+  }
+
+  .talk-img i{
+    position: absolute;
+    left: 930px;
+    color:rgb(81, 112, 189);
+    transform: translate(10%,600%);
+    font-size: 60px;
+ }
+
+
+/* CARD */
+
+.Information{
+    background-color: #111111;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.Information .container{
+    margin-left: 190px;
+}
+
+.Information-items{
+    margin: 10px;
+    z-index: 9 ;
+}
+
+.Information-items a{
+    font-family: 'Noto Sans JP';
+    background-color: #191919;
+    padding: 40px 30px;
+    display: block;
+    height: 260px;
+    width: 260px;
+}
+.Information-items h2{
+    font-family: 'Noto Sans JP';
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+.Information-items p{
+   color: #999999;
+   font-weight: 400;
+   font-family: 'Noto Sans JP';
+   font-size: 14px;
+   padding-top: 20px;
+}
+
+.Information-items i{
+    background-image: linear-gradient(-90deg, #55b4d4,#5758e0);
+    color: transparent;
+    background-clip: text;
+    font-size: 25px;
+    padding-top:15px;
+    padding-bottom:20px;
+}
+
+.Information-items i:last-child{
+    color: #333;
+    font-size: 20px;
+}
+
+.Information-items .ri-arrow-right-circle-line{
+    color: #999999;    
+}
+
+.Information .col-4:first-child a::before{
+    content: '';
+    width: 80%;
+    height: 60%;
+    background-image: linear-gradient(-90deg, #55b4d4,#5758e0);
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: -1;
+}
+.Information .col-4:last-child a::before{
+    content: '';
+    width: 80%;
+    height: 70%;
+    background-image: linear-gradient(-90deg, #55b4d4,#5758e0);
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    z-index: -1;
+}
+
+.Information-items a:hover{
+    background-image: linear-gradient(-90deg, #83a4af,#3737d0);
+
+}
+
+
+/* Footer */
+
+.footer{
+    text-align: center;
+    color: gray;
+    background-color: black;
+}
+
+.footer a{
+    color: blue;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-text {
+    font-family: 'Noto Sans JP';
+    font-weight: 300;
+    font-size: 13px;
+    margin: 0 150px;
+}
